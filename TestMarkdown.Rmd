@@ -2,9 +2,14 @@
 title: "speed and distance"
 author: "Daniel"
 date: "18 12 2021"
+knit: (function(input_file, encoding) {
+ rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), '', 'index.html'))})
 output:
   pdf_document: default
   html_document: default
+ 
 ---
 
 ```{r setup, include=FALSE}
